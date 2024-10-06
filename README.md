@@ -1,137 +1,117 @@
-React Job Portal
-This repository contains the backend and frontend code for a job portal application built using Node.js for the backend and React for the frontend. The backend handles data processing, authentication, and API services, while the frontend provides an interactive user interface for job seekers and employers.
+# Job Portal Application
 
-Table of Contents
-Project Structure
-Features
-Tech Stack
-Getting Started
-Backend Setup
-Frontend Setup
-Environment Variables
-Scripts
-Dependencies Overview
-Backend Dependencies
-Frontend Dependencies
-Running the Application
-License
-Project Structure
-The project is divided into two main parts:
+![Job Portal Live](https://job-portal-frontend-ecru.vercel.app/)
 
-Backend: A REST API server built using Express, which provides all the necessary services for the application, including authentication, database management, and file handling.
-Frontend: A React-based single-page application (SPA) built using Vite that provides the user interface for job seekers and employers.
-Features
-Backend
-User authentication (JWT-based)
-File handling using Multer and Cloudinary for uploading images
-Data storage using MongoDB
-Secure password hashing with Bcrypt
-RESTful API for handling CRUD operations
-Frontend
-Responsive job portal UI for users to register, login, search jobs, and manage profiles
-State management using Redux Toolkit
-Persistent storage for user sessions using Redux Persist
-Interactive UI components using Radix UI
-Routing for seamless navigation using React Router
-Tech Stack
-Backend: Node.js, Express, MongoDB
-Frontend: React, Vite, Tailwind CSS
-Authentication: JSON Web Tokens (JWT)
-File Handling: Multer, Cloudinary
-Getting Started
-Backend Setup
-Clone the repository:
+## Overview
 
-bash
-Copy code
-git clone [<repository-url>](https://github.com/SunkaraboinaPraveenKumar/Job_Portal_App)
-cd backend
-Install dependencies:
+**Job Portal** is a web application built using React for the frontend and Node.js for the backend. This application serves as a platform for job seekers and employers to connect, enabling users to search for job opportunities, post job openings, and manage their applications efficiently.
 
-bash
-Copy code
-npm install
-Create a .env file in the root directory with the required environment variables. See Environment Variables for more details.
+## Table of Contents
 
-Run the backend server in development mode:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Packages](#packages)
+- [Contributing](#contributing)
+- [License](#license)
 
-bash
-Copy code
-npm run dev
-Frontend Setup
-Navigate to the frontend folder:
+## Features
+
+- **User Authentication**: Secure login and registration for job seekers and employers.
+- **Job Listings**: Browse and search for job openings.
+- **Job Applications**: Apply for jobs directly through the platform.
+- **Employer Dashboard**: Post new job openings and manage applications.
+- **User Profiles**: Create and edit user profiles to showcase skills and experiences.
+
+## Technologies Used
+
+- **Frontend**: React, React Router, Axios, Bootstrap
+- **Backend**: Node.js, Express.js, MongoDB
+- **Deployment**: Heroku, GitHub Pages
+
+## Installation
+
+To get a local copy up and running, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SunkaraboinaPraveenKumar/Job_Portal_App.git
+   cd Job_Portal_App
+Install the frontend dependencies:
 
 bash
 Copy code
 cd frontend
-Install dependencies:
-
-bash
-Copy code
 npm install
-Run the frontend development server:
+Install the backend dependencies:
 
 bash
 Copy code
-npm run dev
-Environment Variables
-For the backend, create a .env file in the root directory and add the following variables:
+cd backend
+npm install
+Set up your environment variables for the backend:
 
-MONGO_URI: MongoDB connection string
-JWT_SECRET: Secret key for signing JWT tokens
-CLOUDINARY_CLOUD_NAME: Cloudinary account cloud name
-CLOUDINARY_API_KEY: Cloudinary API key
-CLOUDINARY_API_SECRET: Cloudinary API secret
-Scripts
-Backend Scripts
-npm run dev: Starts the backend server using Nodemon for live-reloading.
-npm test: Placeholder for running tests.
-Frontend Scripts
-npm run dev: Starts the development server for the frontend.
-npm run build: Builds the production version of the frontend.
-npm run lint: Runs ESLint to check for code quality issues.
-npm run preview: Previews the production build.
-Dependencies Overview
-Backend Dependencies
-bcryptjs: Used for hashing user passwords.
-cloudinary: Cloud service for managing images.
-cookie-parser: Parses cookies for user sessions.
-cors: Handles Cross-Origin Resource Sharing.
-datauri: Converts files to Data URI format for easier file handling.
-dotenv: Loads environment variables from a .env file.
-express: Web framework for building REST APIs.
-jsonwebtoken: For user authentication using JSON Web Tokens.
-mongoose: ODM for MongoDB.
-multer: Middleware for handling file uploads.
-nodemon: Utility for automatically restarting the server during development.
-Frontend Dependencies
-@radix-ui/react- components*: Set of UI components used for building accessible UI elements.
-@reduxjs/toolkit & react-redux: State management for managing user sessions, data, and application state.
-axios: Promise-based HTTP client for making API requests.
-embla-carousel-react: A carousel library for displaying items like job listings.
-framer-motion: For adding animations to the user interface.
-lodash: Utility library for data manipulation.
-react-router-dom: Routing library for navigation.
-redux-persist: For persisting the Redux state to local storage.
-tailwindcss: Utility-first CSS framework for styling.
-vite: Build tool that provides fast development server for the frontend.
-Frontend Dev Dependencies
-@vitejs/plugin-react: Vite plugin for React support.
-eslint & related plugins: Linting tools for maintaining code quality.
-postcss & autoprefixer: Used for CSS processing and compatibility.
-Running the Application
-To run the complete application:
+Create a .env file in the backend folder and include your database URI and any other necessary configuration.
+Start the backend server:
 
-Start the Backend Server:
-
-Navigate to the backend folder and run:
 bash
 Copy code
-npm run dev
-Start the Frontend Server:
+npm start
+Start the frontend server:
 
-Navigate to the frontend folder and run:
 bash
 Copy code
-npm run dev
-The backend will typically be available on http://localhost:5000 and the frontend on http://localhost:5173.
+cd frontend
+npm start
+Usage
+Navigate to http://localhost:3000 in your browser to access the application.
+Register as a user or log in if you already have an account.
+Explore job listings, post job openings (for employers), and apply for jobs.
+Folder Structure
+csharp
+Copy code
+Job_Portal_App/
+├── backend/
+│   ├── models/            # Mongoose models
+│   ├── routes/            # Express routes
+│   ├── controllers/       # Business logic
+│   └── config/            # Configuration files
+└── frontend/
+    ├── src/
+    │   ├── components/     # React components
+    │   ├── pages/          # Page components
+    │   └── App.js          # Main application file
+    └── public/             # Public assets
+Packages
+Frontend Packages
+react: A JavaScript library for building user interfaces.
+react-dom: Provides DOM-specific methods for React.
+react-router-dom: Declarative routing for React applications.
+axios: Promise-based HTTP client for making requests.
+bootstrap: CSS framework for responsive design.
+react-bootstrap: Bootstrap components built with React.
+Backend Packages
+express: Fast, unopinionated, minimalist web framework for Node.js.
+mongoose: MongoDB object modeling tool.
+dotenv: Module to load environment variables from a .env file.
+cors: Package to enable Cross-Origin Resource Sharing.
+bcryptjs: Library to hash passwords.
+Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+Create your feature branch:
+bash
+Copy code
+git checkout -b feature/AmazingFeature
+Commit your changes:
+bash
+Copy code
+git commit -m 'Add some AmazingFeature'
+Push to the branch:
+bash
+Copy code
+git push origin feature/AmazingFeature
+Open a Pull Request.
