@@ -44,7 +44,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/SunkaraboinaPraveenKumar/Job_Portal_App)
 cd backend
 Install dependencies:
 
