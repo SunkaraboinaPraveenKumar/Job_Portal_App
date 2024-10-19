@@ -91,8 +91,11 @@ Access the application in your browser at http://localhost:5173 (frontend) and t
 API EndPoints:
 
 -- /api/v1/user: Manages user-related actions such as registration, login, profile management, and authentication.
+
 -- /api/v1/company: Handles operations for companies, including adding, updating, and managing company profiles and job postings.
+
 -- /api/v1/job: Responsible for job-related functionalities like creating, viewing, updating, and searching for job listings.
+
 -- /api/v1/application: Manages job applications, allowing users to apply for jobs and employers to view and manage applications.
 
 Folder Structure:
