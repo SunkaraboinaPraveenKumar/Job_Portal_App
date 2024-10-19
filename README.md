@@ -12,6 +12,7 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
+- [API Endpoints](#api-endpoints)
 - [Folder Structure](#folder-structure)
 - [Packages](#packages)
 - [Contributing](#contributing)
@@ -39,37 +40,55 @@ To get a local copy up and running, follow these steps:
    ```bash
    git clone https://github.com/SunkaraboinaPraveenKumar/Job_Portal_App.git
    cd Job_Portal_App
+
 Install the frontend dependencies:
 
-bash
-Copy code
 cd frontend
-npm install
-Install the backend dependencies:
 
-bash
-Copy code
+1. Install dependencies for the frontend:
+   ```bash
+   npm install
+
 cd backend
-npm install
-Set up your environment variables for the backend:
 
-Create a .env file in the backend folder and include your database URI and any other necessary configuration.
-Start the backend server:
+1. Install dependencies for the backend:
+   ```bash
+   npm install
 
-bash
-Copy code
-npm start
-Start the frontend server:
+Configure environment variables for the backend:
 
-bash
-Copy code
-cd frontend
-npm start
+Create a .env file in the backend directory and add your Firebase and Hugging Face API credentials.
 Usage
-Navigate to http://localhost:3000 in your browser to access the application.
-Register as a user or log in if you already have an account.
-Explore job listings, post job openings (for employers), and apply for jobs.
-Folder Structure
+To start the development servers:
+
+For the frontend:
+
+1. 
+   ```bash
+   cd frontend
+   npm run dev
+
+For the backend:
+
+1. 
+   ```bash
+   cd backend
+   npm start
+
+Usage:
+
+Access the application in your browser at http://localhost:5173 (frontend) and the backend API at http://localhost:3000/api/v1/user.
+
+
+API EndPoints:
+
+-- /api/v1/user: Manages user-related actions such as registration, login, profile management, and authentication.
+-- /api/v1/company: Handles operations for companies, including adding, updating, and managing company profiles and job postings.
+-- /api/v1/job: Responsible for job-related functionalities like creating, viewing, updating, and searching for job listings.
+-- /api/v1/application: Manages job applications, allowing users to apply for jobs and employers to view and manage applications.
+
+Folder Structure:
+
 csharp
 Copy code
 Job_Portal_App/
@@ -84,34 +103,24 @@ Job_Portal_App/
     │   ├── pages/          # Page components
     │   └── App.js          # Main application file
     └── public/             # Public assets
-Packages
-Frontend Packages
+
+Packages:
+
+Frontend Packages:
+
 react: A JavaScript library for building user interfaces.
 react-dom: Provides DOM-specific methods for React.
 react-router-dom: Declarative routing for React applications.
 axios: Promise-based HTTP client for making requests.
 bootstrap: CSS framework for responsive design.
 react-bootstrap: Bootstrap components built with React.
-Backend Packages
+
+Backend Packages:
 express: Fast, unopinionated, minimalist web framework for Node.js.
 mongoose: MongoDB object modeling tool.
 dotenv: Module to load environment variables from a .env file.
 cors: Package to enable Cross-Origin Resource Sharing.
 bcryptjs: Library to hash passwords.
+
 Contributing
 Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-Create your feature branch:
-bash
-Copy code
-git checkout -b feature/AmazingFeature
-Commit your changes:
-bash
-Copy code
-git commit -m 'Add some AmazingFeature'
-Push to the branch:
-bash
-Copy code
-git push origin feature/AmazingFeature
-Open a Pull Request.
