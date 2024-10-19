@@ -24,7 +24,6 @@ COMPANY_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/compa
 - [Folder Structure](#folder-structure)
 - [Packages](#packages)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -36,9 +35,9 @@ COMPANY_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/compa
 
 ## Technologies Used
 
-- **Frontend**: React, React Router, Axios, Bootstrap
-- **Backend**: Node.js, Express.js, MongoDB
-- **Deployment**: Heroku, GitHub Pages
+- **Frontend**: React, React Router, Axios, Tailwind
+- **Backend**: Node.js, Express.js, MongoDB, Cloudinary
+- **Deployment**: Vercel
 
 ## Installation
 
