@@ -119,17 +119,27 @@ Packages:
 Frontend Packages:
 
 react: A JavaScript library for building user interfaces.
+
 react-dom: Provides DOM-specific methods for React.
+
 react-router-dom: Declarative routing for React applications.
+
 axios: Promise-based HTTP client for making requests.
+
 bootstrap: CSS framework for responsive design.
+
 react-bootstrap: Bootstrap components built with React.
 
 Backend Packages:
+
 express: Fast, unopinionated, minimalist web framework for Node.js.
+
 mongoose: MongoDB object modeling tool.
+
 dotenv: Module to load environment variables from a .env file.
+
 cors: Package to enable Cross-Origin Resource Sharing.
+
 bcryptjs: Library to hash passwords.
 
 Contributing
