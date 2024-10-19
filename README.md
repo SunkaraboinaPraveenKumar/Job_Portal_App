@@ -1,6 +1,14 @@
 # Job Portal Application
 
-![Job Portal Live](https://job-portal-frontend-ecru.vercel.app/)
+FRONTEND LIVE: (https://job-portal-frontend-ecru.vercel.app/)
+
+BACKEND LIVE:  
+
+USER_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/user";
+JOB_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/job";
+APPLICATION_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/application";
+COMPANY_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/company";
+
 
 ## Overview
 
@@ -89,20 +97,19 @@ API EndPoints:
 
 Folder Structure:
 
-csharp
-Copy code
-Job_Portal_App/
-├── backend/
-│   ├── models/            # Mongoose models
-│   ├── routes/            # Express routes
-│   ├── controllers/       # Business logic
-│   └── config/            # Configuration files
-└── frontend/
-    ├── src/
-    │   ├── components/     # React components
-    │   ├── pages/          # Page components
-    │   └── App.js          # Main application file
-    └── public/             # Public assets
+1. ```bash
+    Job_Portal_App/
+    ├── backend/
+    │   ├── models/            # Mongoose models
+    │   ├── routes/            # Express routes
+    │   ├── controllers/       # Business logic
+    │   └── config/            # Configuration files
+    └── frontend/
+        ├── src/
+        │   ├── components/     # React components
+        │   ├── pages/          # Page components
+        │   └── App.js          # Main application file
+        └── public/             # Public assets
 
 Packages:
 
