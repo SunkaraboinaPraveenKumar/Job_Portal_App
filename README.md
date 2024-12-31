@@ -2,13 +2,12 @@
 
 FRONTEND LIVE: (https://job-portal-frontend-ecru.vercel.app/)
 
-BACKEND LIVE:  
+BACKEND LIVE:
 
 USER_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/user";
 JOB_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/job";
 APPLICATION_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/application";
 COMPANY_API_END_POINT="https://job-portal-backend-5utw.onrender.com/api/v1/company";
-
 
 ## Overview
 
@@ -70,14 +69,14 @@ To start the development servers:
 
 For the frontend:
 
-1. 
+1.
    ```bash
    cd frontend
    npm run dev
 
 For the backend:
 
-1. 
+1.
    ```bash
    cd backend
    npm start
@@ -86,8 +85,7 @@ Usage:
 
 Access the application in your browser at http://localhost:5173 (frontend) and the backend API at http://localhost:3000/api/v1/user.
 
-
-API EndPoints:
+## API EndPoints:
 
 -- /api/v1/user: Manages user-related actions such as registration, login, profile management, and authentication.
 
@@ -97,7 +95,7 @@ API EndPoints:
 
 -- /api/v1/application: Manages job applications, allowing users to apply for jobs and employers to view and manage applications.
 
-Folder Structure:
+## Folder Structure:
 
 1. ```bash
     Job_Portal_App/
@@ -113,33 +111,26 @@ Folder Structure:
         │   └── App.js          # Main application file
         └── public/             # Public assets
 
-Packages:
+## Packages:
 
-Frontend Packages:
+### Frontend Packages:
 
-react: A JavaScript library for building user interfaces.
+- react: A JavaScript library for building user interfaces.
+- react-dom: Provides DOM-specific methods for React.
+- react-router-dom: Declarative routing for React applications.
+- axios: Promise-based HTTP client for making requests.
+- bootstrap: CSS framework for responsive design.
+- react-bootstrap: Bootstrap components built with React.
 
-react-dom: Provides DOM-specific methods for React.
+### Backend Packages:
 
-react-router-dom: Declarative routing for React applications.
+- express: Fast, unopinionated, minimalist web framework for Node.js.
+- mongoose: MongoDB object modeling tool.
+- dotenv: Module to load environment variables from a .env file.
+- cors: Package to enable Cross-Origin Resource Sharing.
+- bcryptjs: Library to hash passwords.
 
-axios: Promise-based HTTP client for making requests.
+## Contributing
 
-bootstrap: CSS framework for responsive design.
-
-react-bootstrap: Bootstrap components built with React.
-
-Backend Packages:
-
-express: Fast, unopinionated, minimalist web framework for Node.js.
-
-mongoose: MongoDB object modeling tool.
-
-dotenv: Module to load environment variables from a .env file.
-
-cors: Package to enable Cross-Origin Resource Sharing.
-
-bcryptjs: Library to hash passwords.
-
-Contributing
 Contributions are welcome! Please follow these steps:
+
